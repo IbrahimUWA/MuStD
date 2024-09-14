@@ -24,7 +24,7 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
 
 ## Introduction
 
-* The code will be made available soon.
+**The code will be made available soon.**
 
 MuStD (MultiStream Detection) is an advanced object detection network that integrates data from multiple streams (LiDAR, RGB images, and polar coordinates) to enhance detection capabilities across a wide range of environments and object categories. This network is capable of addressing both 2D and 3D object detection tasks, providing a robust framework for multimodal fusion. The MuStD network was originally applied to the KITTI benchmark for autonomous driving research, where it achieved state-of-the-art results in 3D car detection. However, its flexible architecture enables broader applications in various object detection scenarios.
 
