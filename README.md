@@ -14,7 +14,6 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
   - [Key Features](#key-features)
   - [Experimental Results](#experimental-results)
     - [KITTI Benchmark Results (3D Car Detection):](#kitti-benchmark-results-3d-car-detection)
-  - [Applications](#applications)
 
 ---
 
@@ -25,6 +24,7 @@ MuStD (MultiStream Detection) is an advanced object detection network that integ
 ## Architecture Overview
 
 The MuStD network consists of three parallel streams, each responsible for processing distinct data types, which are fused to produce highly accurate object detection results.
+![Architecture for MuStD Network](MuStD/docs/Figures/pipeline.png)
 
 ### 1. LiDAR-PillarNet Stream
 This stream processes raw LiDAR point cloud data by converting it into 2D representations using pillar-based voxelization. The data is passed through a Multi-Layer Perceptron (MLP) and sparse 2D convolutions to extract geometric features like object orientation and localization. These features are crucial for high-precision 3D object detection.
@@ -75,10 +75,3 @@ MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art r
 
 For detailed performance analysis, refer to our full set of results on the KITTI Benchmark [here](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
 
-## Applications
-
-While MuStD was originally applied to autonomous driving scenarios, its architecture is adaptable to a wide variety of object detection tasks, including:
-- **Surveillance**: Detecting pedestrians, vehicles, and cyclists in crowded urban environments.
-- **Autonomous Robotics**: Ensuring safe navigation through dynamic environments.
-- **Precision Agriculture**: Recognizing objects in complex agricultural settings.
-- **Indoor Object Detection**: Mapping and detecting objects in indoor scenes, leveraging RGB-D sensors.
