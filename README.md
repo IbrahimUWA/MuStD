@@ -34,7 +34,7 @@ This stream processes raw LiDAR point cloud data by converting it into 2D repres
 - **MLP**: Extracts high-level geometric features.
 - **SparseNet**: Processes sparse features for robust detection.
 
-![Architecture Diagram Placeholder](path_to_your_image.png)
+![Architecture Diagram Placeholder](docs/Figures/streamA.png)
 
 ### 2. LiDAR Height Compression Stream
 This stream processes the height dimension of LiDAR point cloud data using 3D sparse convolutions, which are then compressed into a 2D Bird's-Eye View (BEV) map for further processing. This stream is highly efficient and crucial for preserving the spatial characteristics of the scene while minimizing computational overhead.
@@ -43,7 +43,7 @@ This stream processes the height dimension of LiDAR point cloud data using 3D sp
 - **3D Sparse Convolutions**: Extract features from 3D point clouds.
 - **Height Compression**: Projects 3D data into a BEV feature map.
 
-![Height Compression Stream Diagram Placeholder](path_to_your_image.png)
+![Height Compression Stream Diagram Placeholder](docs/Figures/streamB.png)
 
 ### 3. 3D Multimodal (MM) Stream
 The 3D MM stream is responsible for combining LiDAR point clouds with RGB image features using UV mapping and polar coordinate indexing. This stream captures both spatial orientation and texture information, addressing the limitations of single-modality approaches. The stream’s UV-Polar block creates hybrid 2D-3D features, which are crucial for accurate object detection in complex environments.
@@ -53,7 +53,7 @@ The 3D MM stream is responsible for combining LiDAR point clouds with RGB image 
 - **Polar Coordinate Indexing**: Encodes the spatial orientation and distance of objects.
 - **Fusion of UV, Polar, and 3D features**: Comprehensive feature integration for improved detection.
 
-![UV-Polar Block Diagram Placeholder](path_to_your_image.png)
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
 
 ## Key Features
 
