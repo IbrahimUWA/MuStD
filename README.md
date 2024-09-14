@@ -13,8 +13,8 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
     - [3. 3D Multimodal (MM) Stream](#3-3d-multimodal-mm-stream)
   - [Key Features](#key-features)
   - [Experimental Results](#experimental-results)
-    - [KITTI 3D Object Detection Evaluation 2017:](#kitti-3d-object-detection-evaluation-2017)
-    - [KITTI Benchmark Overall Results:](#kitti-benchmark-overall-results)
+    - [KITTI 3D Object Detection Evaluation 2017](#kitti-3d-object-detection-evaluation-2017)
+    - [KITTI Benchmark Overall Results](#kitti-benchmark-overall-results)
     - [Comparison with 2D, 3D detection, BEV and orientation with Other](#comparison-with-2d-3d-detection-bev-and-orientation-with-other)
     - [Ablation Study](#ablation-study)
     - [Performance on Multi-Class Detection](#performance-on-multi-class-detection)
@@ -23,6 +23,8 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
 ---
 
 ## Introduction
+
+* The code will be made available soon.
 
 MuStD (MultiStream Detection) is an advanced object detection network that integrates data from multiple streams (LiDAR, RGB images, and polar coordinates) to enhance detection capabilities across a wide range of environments and object categories. This network is capable of addressing both 2D and 3D object detection tasks, providing a robust framework for multimodal fusion. The MuStD network was originally applied to the KITTI benchmark for autonomous driving research, where it achieved state-of-the-art results in 3D car detection. However, its flexible architecture enables broader applications in various object detection scenarios.
 
@@ -69,17 +71,16 @@ The 3D MM stream is responsible for combining LiDAR point clouds with RGB image 
 
 ## Experimental Results
 
-MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art results for 3D object detection tasks. The network’s performance metrics (AP, precision-recall curves) demonstrate its robustness in challenging environments, such as occluded or distant objects. Below is a detailed breakdown of the experimental results:
+MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art results for 3D object detection tasks. The network’s performance metrics (AP, precision-recall curves) demonstrate its robustness in challenging environments, such as occluded or distant objects. Below is a detailed breakdown of the experimental results and dataset introduction:
 
-### KITTI 3D Object Detection Evaluation 2017:
+### KITTI 3D Object Detection Evaluation 2017
 
-We evaluated MuStD on the **KITTI 3D Object Detection Benchmark**, which is widely recognized as one of the most comprehensive datasets for 3D object detection in autonomous driving. The KITTI dataset consists of over 7,000 labeled images with corresponding point cloud data from a Velodyne LiDAR sensor. The benchmark evaluates models across three difficulty levels: **Easy**, **Moderate**, and **Hard**, based on factors like object occlusion and truncation.
+We train and test MuStD Network on the **KITTI 3D Object Detection Benchmark**, which is widely recognized as one of the most comprehensive datasets for 3D object detection in autonomous driving. The KITTI dataset consists of over 7,000 labeled images with corresponding point cloud data from a Velodyne LiDAR sensor. The benchmark evaluates models across three difficulty levels: **Easy**, **Moderate**, and **Hard**, based on factors like object occlusion and truncation.
 
 For more details, visit the official KITTI 3D Object Detection Evaluation 2017 page: [KITTI Benchmark](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
 
 
-### KITTI Benchmark Overall Results:
-
+### KITTI Benchmark Overall Results
 MuStD achieved competitive performance for 2D, 3D, BEV and orientation car detection on the KITTI test set across all difficulty levels. The average precision (AP) values are as follows:
 
 ![OVERALL OBJECT DETECTION](docs/Figures/RESULT_OF_OVERALL_OBJECT_DETECTION.png)
