@@ -14,6 +14,10 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
   - [Key Features](#key-features)
   - [Experimental Results](#experimental-results)
     - [KITTI Benchmark Results (3D Car Detection):](#kitti-benchmark-results-3d-car-detection)
+    - [Comparison with Other Methods](#comparison-with-other-methods)
+    - [Ablation Study](#ablation-study)
+    - [Performance on Multi-Class Detection](#performance-on-multi-class-detection)
+    - [Precision-Recall Curves for 2D, 3D, and BEV Detection](#precision-recall-curves-for-2d-3d-and-bev-detection)
 
 ---
 
@@ -64,14 +68,47 @@ The 3D MM stream is responsible for combining LiDAR point clouds with RGB image 
 
 ## Experimental Results
 
-MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art results for 3D object detection tasks. The network’s performance metrics (AP, precision-recall curves) demonstrate its robustness in challenging environments, such as occluded or distant objects.
+MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art results for 3D object detection tasks. The network’s performance metrics (AP, precision-recall curves) demonstrate its robustness in challenging environments, such as occluded or distant objects. Below is a detailed breakdown of the experimental results:
 
 ### KITTI Benchmark Results (3D Car Detection):
 
-| Category | Easy | Moderate | Hard | Mean AP |
-|----------|------|----------|------|---------|
-| 3D Car Detection | 97.91% | 97.21% | 94.04% | 96.39% |
-| BEV Detection | 94.62% | 91.13% | 88.28% | 91.34% |
+MuStD achieved competitive performance for 3D car detection on the KITTI test set across all difficulty levels. The average precision (AP) values are as follows:
 
-For detailed performance analysis, refer to our full set of results on the KITTI Benchmark [here](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
+
+### Comparison with Other Methods
+
+We compared MuStD to other state-of-the-art methods on the KITTI dataset, where it outperformed in various categories. Below is a performance comparison with different methods across various categories such as 2D and 3D detection, and orientation.
+
+**Insert Figure/Table Image 1: KITTI Benchmark Performance Comparison for 2D, 3D, and BEV detection**
+![KITTI Benchmark Performance Comparison for 2D](docs/Figures/RESULT OF 2D CAR DETECTION AND ORIENTATION.png)
+![KITTI Benchmark Performance Comparison for 3D](docs/Figures/RESULT OF CAR 3D AND BIRD’S-EYE VIEW (BEV) DETECTION.png)
+
+
+### Ablation Study
+
+An ablation study was conducted to evaluate the contributions of different network components to the overall detection accuracy. We evaluated configurations with and without specific modules like the 3D MM Stream, LiDAR-PillarNet, and LiDAR-Height Compression streams.
+
+**Insert Figure/Table Image 2: Ablation Study Results**
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
+
+### Performance on Multi-Class Detection
+
+MuStD was further evaluated on multi-class 3D detection tasks including car, pedestrian, and cyclist detection. The network consistently outperformed existing methods across all categories.
+
+**Insert Figure/Table Image 3: Multi-Class Detection Results on KITTI Validation Set**
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
+
+### Precision-Recall Curves for 2D, 3D, and BEV Detection
+
+The following precision-recall curves illustrate the performance of MuStD for 2D, 3D, and BEV car detection across the Easy, Moderate, and Hard categories on the KITTI dataset.
+
+**Insert Figure/Table Image 4: Precision-Recall Curves for 2D Car Detection and Orientation**
+
+
+**Insert Figure/Table Image 5: Precision-Recall Curves for 3D Car Detection and BEV Detection**
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
+![UV-Polar Block Diagram Placeholder](docs/Figures/streamC.png)
+
+For detailed performance analysis, refer to our full set of results on the [KITTI Benchmark](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
 
