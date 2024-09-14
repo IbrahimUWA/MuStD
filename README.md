@@ -24,7 +24,7 @@ MuStD (MultiStream Detection) is an advanced object detection network that integ
 ## Architecture Overview
 
 The MuStD network consists of three parallel streams, each responsible for processing distinct data types, which are fused to produce highly accurate object detection results.
-![Architecture for MuStD Network](MuStD/docs/Figures/pipeline.png)
+![Architecture for MuStD Network](docs/Figures/pipeline.png)
 
 ### 1. LiDAR-PillarNet Stream
 This stream processes raw LiDAR point cloud data by converting it into 2D representations using pillar-based voxelization. The data is passed through a Multi-Layer Perceptron (MLP) and sparse 2D convolutions to extract geometric features like object orientation and localization. These features are crucial for high-precision 3D object detection.
