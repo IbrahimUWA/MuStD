@@ -111,5 +111,5 @@ The following precision-recall curves illustrate the performance of MuStD for 2D
 ![2D_Precision_Graph](docs/Figures/2D_Precision_Graph-2.PNG)
 ![3D_Precision_Graph](docs/Figures/3D_Precision_Graph-1.PNG)
 
-For detailed performance analysis, refer to our full set of results on the [KITTI Resutl](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
+For detailed performance analysis, refer to our full set of results on the [KITTI Result](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
 
