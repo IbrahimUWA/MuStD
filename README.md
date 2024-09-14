@@ -74,7 +74,7 @@ MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art r
 
 MuStD achieved competitive performance for 2D, 3D, BEV and orientation car detection on the KITTI test set across all difficulty levels. The average precision (AP) values are as follows:
 
-![OVERALL OBJECT DETECTION](docs/Figures/RESULT OF_OVERALL_OBJECT_DETECTION.png)
+![OVERALL OBJECT DETECTION](docs/Figures/RESULT_OF_OVERALL_OBJECT_DETECTION.png)
 
 ### Comparison with 2D, 3D detection, BEV and orientation with Other 
 
