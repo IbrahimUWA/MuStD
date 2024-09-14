@@ -94,7 +94,7 @@ An ablation study was conducted to evaluate the contributions of different netwo
 
 MuStD was further evaluated on multi-class 3D detection tasks including car, pedestrian, and cyclist detection. The network consistently outperformed existing methods across all categories.
 
-![Multi-Class Detection Results](docs/Figures/RESULT_OF_OVERALL_OBJECT_DETECTION.png)
+![Multi-Class Detection Results](docs/Figures/COMPARISON_ON_KETTI_VALIDATION_SET.png)
 
 ### Precision-Recall Curves for 2D, 3D, and BEV Detection
 
