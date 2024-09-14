@@ -13,6 +13,7 @@ MuStD (MultiStream Detection) is a novel multimodal object detection network des
     - [3. 3D Multimodal (MM) Stream](#3-3d-multimodal-mm-stream)
   - [Key Features](#key-features)
   - [Experimental Results](#experimental-results)
+    - [KITTI 3D Object Detection Evaluation 2017:](#kitti-3d-object-detection-evaluation-2017)
     - [KITTI Benchmark Overall Results:](#kitti-benchmark-overall-results)
     - [Comparison with 2D, 3D detection, BEV and orientation with Other](#comparison-with-2d-3d-detection-bev-and-orientation-with-other)
     - [Ablation Study](#ablation-study)
@@ -70,6 +71,13 @@ The 3D MM stream is responsible for combining LiDAR point clouds with RGB image 
 
 MuStD was evaluated on the KITTI benchmark, where it achieved state-of-the-art results for 3D object detection tasks. The network’s performance metrics (AP, precision-recall curves) demonstrate its robustness in challenging environments, such as occluded or distant objects. Below is a detailed breakdown of the experimental results:
 
+### KITTI 3D Object Detection Evaluation 2017:
+
+We evaluated MuStD on the **KITTI 3D Object Detection Benchmark**, which is widely recognized as one of the most comprehensive datasets for 3D object detection in autonomous driving. The KITTI dataset consists of over 7,000 labeled images with corresponding point cloud data from a Velodyne LiDAR sensor. The benchmark evaluates models across three difficulty levels: **Easy**, **Moderate**, and **Hard**, based on factors like object occlusion and truncation.
+
+For more details, visit the official KITTI 3D Object Detection Evaluation 2017 page: [KITTI Benchmark](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
+
+
 ### KITTI Benchmark Overall Results:
 
 MuStD achieved competitive performance for 2D, 3D, BEV and orientation car detection on the KITTI test set across all difficulty levels. The average precision (AP) values are as follows:
@@ -102,5 +110,5 @@ The following precision-recall curves illustrate the performance of MuStD for 2D
 ![2D_Precision_Graph](docs/Figures/2D_Precision_Graph-2.PNG)
 ![3D_Precision_Graph](docs/Figures/3D_Precision_Graph-1.PNG)
 
-For detailed performance analysis, refer to our full set of results on the [KITTI Benchmark](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
+For detailed performance analysis, refer to our full set of results on the [KITTI Resutl](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=d162ec699d6992040e34314d19ab7f5c217075e0).
 
